@@ -1,0 +1,411 @@
+/* Animações */
+
+.navbar .btn {
+    /* Transition for smooth changes in transform and background-color properties */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+  
+.navbar .btn:hover, .navbar .btn:focus {
+    transform: scale(1.15);
+    background-color: #0065A9;
+    color: white;
+}
+
+.navbar .btn:hover i, .navbar .btn:focus i {
+    color: inherit;
+}
+
+@media (min-width: 992px) { /* Navbar dispositivos maiores */
+    .navbar .nav-link {
+        /* This will ensure the movement is smooth */
+        transition: transform 0.3s ease;
+    }
+      
+    .navbar .nav-link:hover {
+        /* Move the link up by 7px */
+        transform: translateY(-7px);
+    }
+
+.navbar .nav-link {
+    /* This will ensure the movement is smooth */
+    transition: transform 0.3s ease;
+}
+  
+.navbar .nav-link:hover {
+    /* Move the link up by 7px */
+    transform: translateY(-7px);
+}
+}
+
+@media (max-width: 991px) { /* Navbar collapse */
+.navbar .nav-item {
+    display: block; /* Ensures nav-item takes up the full width available */
+    padding: 0; /* Remove padding to make the background color stretch */
+}
+
+.navbar .nav-item:hover, .navbar .nav-item .nav-link.active {
+    background-color: #181414; /* Consistent background color for hover and active */
+}
+
+.navbar .nav-link {
+    display: block;
+    width: 100%; /* Ensures the link takes the full width of its parent */
+    padding: .5rem 1rem; /* Bootstrap's default padding for nav links, adjust as necessary */
+}
+
+.navbar .nav-link.active {
+    color: aqua; /* Text color for active item */
+}
+}
+
+/* Seletores */
+
+p {
+    color: white;
+}
+
+/* Navbar */
+
+#nav-principal {
+    color: white;
+}
+
+.navbar-custom {
+    background-color: #010a4d;
+}
+
+.navbar-custom a {
+    color: white;
+}
+
+.navbar-custom a:hover {
+    color: white;
+}
+
+.nav-item {
+    font-weight: bold;
+    padding: 0px 10px
+}
+
+.btn-custom {
+    background-color: white;
+    color: #010a4d;
+}
+
+/* Cards */
+
+.bg-inner {
+    background-color: #010a4d;
+}
+
+/* Target the anchor tags wrapping the cards */
+.card-group a.card {
+    position: relative; /* Needed to position the text over the image */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    overflow: hidden; /* Ensures the image doesn't overflow the card's box */
+    display: flex; /* Allows children to be flex items */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Pushes the card-body to the bottom */
+}
+
+.card-group a.card .card-img {
+    transition: transform .3s ease-in-out; /* Smooth transition for hover effect */
+    width: 100%; /* Ensures the image covers the full width of the card */
+    min-height: 325px; /* Adjust this value to increase the card height */
+    background-size: cover; /* Ensures the background covers the card area */
+    background-position: center center; /* Centers the background image */
+}
+
+.card-group a.card:hover .card-img {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Position the card-body at the bottom of the card */
+.card-group a.card .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    padding: 1rem; /* Padding around the text */
+}
+
+/* Ensure text doesn't overlay the image on small screens */
+@media (max-width: 767px) {
+.card-group a.card .card-body {
+    position: relative; /* Stack the text below the image on small screens */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+}
+}
+
+
+/* Footer */
+
+footer a {
+    color: lightgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer i {
+    color: white
+}
+
+.bg-custom {
+    background-color: #18141c;    
+}
+
+/* IDs */
+
+#home-page { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),
+                       rgba(0, 0, 0, 0.5)), url('../img/bannerph.png');
+    padding-top: 102px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#cases-page {
+    background: #010a4d;
+}
+
+#altura {
+    height: 840px;
+}
+
+#cases {
+    text-align: center;
+    color: white;
+    padding: 50px 0px;
+}
+
+#titulo1 {
+    font-family: "source-sans-pro", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 26px;
+    color: white;
+}
+
+#titulo2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -4px;
+    color: white;
+}
+
+#titulo3 {
+    font-family: "source-sans-pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FFFFFFFB;
+}
+
+#titulocases {
+    font-family: "source-sans-pro", sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 62px;
+    color: white;
+}
+
+#buttoncases {
+    font-family: "source-sans-pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    flex-grow: 1;
+    order: 10;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#descricao {
+    font-family: "source-sans-pro", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: -1px;
+    color: white;
+}
+
+hr.my-4 {
+    border-top: 1px solid #fff; 
+    width: 90%; /* Adjust the width as needed */
+    margin: 1rem auto; /* Centers the hr and adds spacing */
+}
+  
+/* Style the paragraphs for the stats to match the design you want */
+.row div p {
+    font-size: 1rem; /* Adjust the size as needed */
+    color: #fff; /* Adjust the color as needed */
+    /* Add any additional styling here */
+}
+  
+/* Ensure the stats wrap under each other on smaller screens */
+@media (max-width: 768px) {
+    .row div p {
+      margin-bottom: 1rem;
+    }
+}
+
+i {
+    color: #010a4d;
+}
+
+/* Slick Slider */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+.section-wrap {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  background:black;
+}
+
+.cartoes-wrapper {
+  width:100%;
+  height:300px;
+  max-width:1200px;
+  overflow-x:hidden;
+  position:relative;
+}
+
+.cartoes {
+  position:absolute;
+  top:15px;
+  left:46.25%;
+  transform:translateX(-110px);
+  display:flex;
+  flex-direction:row;
+  width:2300px;
+  justify-content:space-between;
+}
+
+.cartao {
+  width:400px;
+  height:260px;
+  border-radius:14px;
+  border:none;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing:0.5px;
+  display:inline;
+  cursor:pointer;
+  box-sizing:border-box;
+  color:#000;
+  transition: transform 0.75s, height 0.75s, box-shadow 0.75s, border 0.75s;
+  overflow-y: hidden;
+}
+
+.cartao h2 {
+  font-size:2.6em;
+  font-weight:300;
+  margin-top:1.25em;
+}
+
+.cartao h4 {
+  text-transform:uppercase;
+}
+
+.icon svg {
+  overflow:visible;
+  stroke-width:1.25em;
+  width:3em;
+}
+
+.cartoes-wrapper::after {
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  width:100%;
+  max-width:1200px;
+  height:100%;
+  background:linear-gradient(90deg, black 0%, #ffffff00 30%, #ffffff00 70%, black    100%);
+  pointer-events:none;
+}
+
+.flecha-btn {
+  width:40px;
+  height:40px;
+  background:#fff;
+  border-radius:50%;
+  border:none;
+  box-shadow: 0 6px 8px #00000030;
+  position:absolute;
+  top:50%;
+  left:20px;
+  transform:translateY(-50%);
+  z-index:1000;
+  cursor:pointer;
+  transition: opacity 0.75s;
+}
+
+.flecha-btn-next {
+  left:auto;
+  right:20px;
+}
+
+.flecha-btn svg {
+  fill:#333;
+  position:absolute;
+  height:80%;  
+  left:50%;
+  top:50%;
+  transform:translate(-60%,-50%);
+}
+
+.flecha-btn-next svg {
+  transform:translate(-40%,-50%);
+}
+
+.cartao1 {
+    background: linear-gradient( rgba(0, 0, 0, .45), rgba(0, 0, 0, 0.43) ), url(../media/wysiwyg/cases/4-9-e.jpg) no-repeat top;
+    background-size: cover;
+    color: white;
+}
+
+.cartao2 {
+    background: linear-gradient( rgba(0, 0, 0, .45), rgba(0, 0, 0, 0.43) ), url(../media/wysiwyg/cases/10-1-e.jpg) no-repeat top;
+    background-size: cover;
+    color: white;
+}
+
+.cartao3 {
+    background: linear-gradient( rgba(0, 0, 0, .45), rgba(0, 0, 0, 0.43) ), url(../media/wysiwyg/cases/4-4-e.jpg) no-repeat top;
+    background-size: cover;
+    color: white;
+}
+
+.cartao4 {
+    background: linear-gradient( rgba(0, 0, 0, .45), rgba(0, 0, 0, 0.43) ), url(../media/wysiwyg/cases/4-7-e.jpg) no-repeat top;
+    background-size: cover;
+    color: white;
+}
+
+.cartao5 {
+    background: linear-gradient( rgba(0, 0, 0, .45), rgba(0, 0, 0, 0.43) ), url(../media/wysiwyg/cases/4-8-e.jpg) no-repeat top;
+    background-size: cover;
+    color: white;
+}
+
+.cartao6 {
+    background: linear-gradient( rgba(0, 0, 0, .45), rgba(0, 0, 0, 0.43) ), url(../media/wysiwyg/cases/6-3-e.jpg) no-repeat top;
+    background-size: cover;
+    color: white;
+}
