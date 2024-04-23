@@ -1,3 +1,335 @@
+/*--------------------------------------------------------------
+# Geral
+--------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+a {
+color: #1acc8d;
+text-decoration: none;
+}
+
+a:hover {
+color: #34e5a6;
+text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+position: fixed;
+visibility: hidden;
+opacity: 0;
+right: 15px;
+bottom: 15px;
+z-index: 996;
+background: #1acc8d;
+width: 40px;
+height: 40px;
+border-radius: 50px;
+transition: all 0.4s;
+}
+
+.back-to-top i {
+font-size: 28px;
+color: #fff;
+line-height: 0;
+}
+
+.back-to-top:hover {
+background: #2be4a2;
+color: #fff;
+}
+
+.back-to-top.active {
+visibility: visible;
+opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Details
+--------------------------------------------------------------*/
+.details .content+.content {
+    margin-top: 100px;
+}
+  
+  .details .content h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #010483;
+}
+  
+  .details .content ul {
+    list-style: none;
+    padding: 0;
+}
+  
+  .details .content ul li {
+    padding-bottom: 10px;
+}
+  
+  .details .content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #1acc8d;
+}
+  
+  .details .content p:last-child {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+  
+.section-bg {
+    background-color: #f5f5ff;
+}
+  
+.section-title {
+    padding-bottom: 40px;
+}
+  
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #1acc8d;
+    margin: 4px 10px;
+}
+
+.section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #010483;
+}
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing .box {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pricing h3 {
+    font-weight: 400;
+    margin: -20px -20px 20px -20px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777777;
+    background: #f8f8f8;
+  }
+  
+  .pricing h4 {
+    font-size: 36px;
+    color: #1acc8d;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .pricing h4 sup {
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+  }
+  
+  .pricing h4 span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .pricing ul {
+    padding: 0;
+    list-style: none;
+    color: #444444;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  
+  .pricing ul li {
+    padding-bottom: 16px;
+  }
+  
+  .pricing ul i {
+    color: #1acc8d;
+    font-size: 18px;
+    padding-right: 4px;
+  }
+  
+  .pricing ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+  }
+  
+  .pricing .btn-wrap {
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+    background: #f8f8f8;
+    text-align: center;
+  }
+  
+  .pricing .btn-buy {
+    background: #1acc8d;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 50px;
+    color: #fff;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .pricing .btn-buy:hover {
+    background: #149f6e;
+  }
+  
+  .pricing .featured h3 {
+    color: #fff;
+    background: #1acc8d;
+  }
+  
+  .pricing .advanced {
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+    background: #1acc8d;
+    color: #fff;
+  }
+  
+  /*--------------------------------------------------------------
+  # F.A.Q
+  --------------------------------------------------------------*/
+  .faq .faq-list {
+    padding: 0;
+  }
+  
+  .faq .faq-list ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .faq .faq-list li+li {
+    margin-top: 15px;
+  }
+  
+  .faq .faq-list li {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .faq .faq-list a {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 30px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .faq .faq-list .icon-help {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #34e5a6;
+  }
+  
+  .faq .faq-list .icon-show,
+  .faq .faq-list .icon-close {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .faq .faq-list p {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+  }
+  
+  .faq .faq-list .icon-show {
+    display: none;
+  }
+  
+  .faq .faq-list a.collapsed {
+    color: #343a40;
+  }
+  
+  .faq .faq-list a.collapsed:hover {
+    color: #1acc8d;
+  }
+  
+  .faq .faq-list a.collapsed .icon-show {
+    display: inline-block;
+  }
+  
+  .faq .faq-list a.collapsed .icon-close {
+    display: none;
+  }
+  
+  @media (max-width: 1200px) {
+    .faq .faq-list {
+      padding: 0;
+    }
+  }
+  
+/* AQUI COMEÇA O CSS ENRICO */
 /* Animações */
 
 .navbar .btn {
@@ -44,7 +376,7 @@
 }
 
 .navbar .nav-item:hover, .navbar .nav-item .nav-link.active {
-    background-color: #181414; /* Consistent background color for hover and active */
+    background-color: #0065A9; /* Consistent background color for hover and active */
 }
 
 .navbar .nav-link {
@@ -56,12 +388,6 @@
 .navbar .nav-link.active {
     color: aqua; /* Text color for active item */
 }
-}
-
-/* Seletores */
-
-p {
-    color: white;
 }
 
 /* Navbar */
@@ -90,6 +416,12 @@ p {
 .btn-custom {
     background-color: white;
     color: #010a4d;
+}
+
+/* IDs para Scroll Navbar */
+
+#cases-scroll {
+    text-decoration: none;
 }
 
 /* Cards */
@@ -247,7 +579,7 @@ hr.my-4 {
 /* Style the paragraphs for the stats to match the design you want */
 .row div p {
     font-size: 1rem; /* Adjust the size as needed */
-    color: #fff; /* Adjust the color as needed */
+    color: #444444; /* Adjust the color as needed */
     /* Add any additional styling here */
 }
   
