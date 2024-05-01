@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pedro Henrique Nutricionista - Index</title>
+  <title>Pedro Henrique Nutricionista</title>
   <link rel="icon" href="img/favicon-32x32.png">
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- Favicons -->
@@ -50,11 +50,12 @@
   * Autor: Enrico Saito Dev
   ======================================================== -->
 </head>
+
 <body>  
   <header>
     <nav class="navbar navbar-expand-md navbar-custom fixed-top">
       <div class="container">
-        <a href="cases.html" class="navbar-brand">
+        <a href="#" class="navbar-brand">
           <img src="img/phlogonav.png " width="142" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-principal">
@@ -75,7 +76,7 @@
               <a href="#cases-scroll" class="nav-link">Cases</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Perguntas Frequentes</a>
+              <a href="#faq" class="nav-link">Perguntas Frequentes</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Contato</a>
@@ -90,16 +91,47 @@
   </header>
 
   <section id="home-page">
-  <div class="container">
-    <div class="row align-items-center" id="altura">
-      <div class="col-md-12 align-self-middle" >
-        <h2 id="titulo1">MEU TRABALHO</h2>
-        <h1 id="titulo2">Destaques</h1>
-        <h6 id="titulo3">Aprenda como mudar seu estilo de vida</h6>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>SAÚDE</h1>
+          <h1>HIPERTROFIA</h1>
+          <h1>EMAGRECIMENTO</h1>
+          <p id="slogan">Te ajudo a alcançar seu objetivo sem extremismo. Sua mudança está aqui!</p>
+        </div>
+        <div class="col-md-6">
+          <div class="row"> <!-- Nested row for images -->
+            <div class="col-md-4">
+              <img src="img/ph-meal1.jpg" alt="Meal 1" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+              <img src="img/ph-meal2.jpg" alt="Meal 2" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+              <img src="img/ph-meal3.jpg" alt="Meal 3" class="img-fluid">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  
+    <div class="bg-custom text-center text-white" id="social-media">
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4 ">
+          <!-- Social Media Links -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa-solid fa-envelope"></i></a>
+        </section>
+        <!-- End of Section: Social media -->
+      </div>
+    </div>
   </section>
+  
   
   <!-- Detalhes -->
   <section id="details" class="details">
@@ -284,46 +316,46 @@
       <div class="faq-list">
         <ul>
           <li data-aos="fade-up">
-            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Quais são os principais objetivos do acompanhamento nutricional? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
               <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                Os principais objetivos do acompanhamento nutricional incluem promover a saúde, prevenir doenças, melhorar o desempenho físico e mental, e alcançar e manter um peso saudável.
               </p>
             </div>
           </li>
 
           <li data-aos="fade-up" data-aos-delay="100">
-            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Como é determinado o plano alimentar individualizado para um paciente? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                O plano alimentar é determinado com base na avaliação das necessidades nutricionais do paciente, levando em consideração fatores como idade, sexo, nível de atividade física, condições de saúde e metas específicas.
               </p>
             </div>
           </li>
 
           <li data-aos="fade-up" data-aos-delay="200">
-            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Qual é a importância do acompanhamento regular durante o processo de mudança de hábitos alimentares? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                O acompanhamento regular permite ajustes no plano alimentar conforme necessário, oferece suporte emocional e motivacional, e monitora o progresso em direção às metas estabelecidas, garantindo maior eficácia no processo de mudança de hábitos alimentares.
               </p>
             </div>
           </li>
 
           <li data-aos="fade-up" data-aos-delay="300">
-            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Como são avaliados os resultados do acompanhamento nutricional? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                Os resultados são avaliados por meio de análises de medidas antropométricas, composição corporal, exames laboratoriais, bem como pela observação de mudanças nos hábitos alimentares, sintomas clínicos e melhorias na saúde geral do paciente.
               </p>
             </div>
           </li>
 
           <li data-aos="fade-up" data-aos-delay="400">
-            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Qual é o papel da educação nutricional no acompanhamento nutricional? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                A educação nutricional desempenha um papel fundamental, capacitando o paciente a fazer escolhas alimentares saudáveis, compreender os benefícios de uma dieta balanceada e sustentável, e adotar hábitos alimentares que promovam a saúde a longo prazo.
               </p>
             </div>
           </li>
@@ -339,147 +371,20 @@
 <footer class="bg-custom text-center text-white">
   <!-- Grid container -->
   <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4 ">
-      <!-- Facebook -->
-      <a data-mdb-ripple-init="" class="btn btn-outline btn-floating m-1 legitRipple d-inline" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-      <!-- Youtube -->
-      <a data-mdb-ripple-init="" class="btn btn-outline btn-floating m-1 legitRipple d-inline" href="#!" role="button"><i class="fab fa-youtube"></i></a>
-
-      <!-- Google -->
-      <a data-mdb-ripple-init="" class="btn btn-outline btn-floating m-1 legitRipple d-inline" href="#!" role="button"><i class="fab fa-google"></i></a>
-
-      <!-- Instagram -->
-      <a data-mdb-ripple-init="" class="btn btn-outline btn-floating m-1 legitRipple d-inline" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-      <!-- Linkedin -->
-      <a data-mdb-ripple-init="" class="btn btn-outline btn-floating m-1 legitRipple d-inline" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-      <!-- Email -->
-      <a data-mdb-ripple-init="" class="btn q btn-outline btn-floating m-1 legitRipple d-inline" href="#!" role="button"><i class="fa-solid fa-envelope"></i></a>
-    </section>
-    <!-- Section: Social media -->
-
     <!-- Section: Text -->
     <section class="mb-4">
       <p>
         Com anos de experiência na busca pelas melhores práticas de gestão, na Aelius Solar, sempre visamos a eficiência na utilização de recursos. 
         Apaixonados por pessoas e pela melhoria da qualidade de vida, acompanhamos os avanços tecnológicos e a adoção de ferramentas sustentáveis.
       </p>
-      <h5>
-         TODO O SITE EM ATÉ 10X SEM JUROS!
-      </h5>
     </section>
-    <!-- Section: Text -->
-
-    <!-- Section: Links -->
-    <section class="">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5>Institucional</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a class="text-white" href="#!">Sobre a Aelius Solar</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Atendimento Especializado</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Equipe de Instalação</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Transportadoras Especializadas</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Compra Segura</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Simulador de Energia Solar</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5>Atendimento</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a class="text-white" href="#!">Central de Atendimento</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Perguntas Frequentes</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Como Comprar</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Formas de Pagamento</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5>Ajuda</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a class="text-white" href="#!">Meus Pedidos</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Troca e Devolução</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Entregas</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Contate-nos</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">Parceiro</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5>Contato</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a class="text-white" href="#!">SP - (11) 5118-3643</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">RJ - (21) 3180-4344</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">ES - (27) 3191-2345</a>
-            </li>
-            <li>
-              <a class="text-white" href="#!">WhatsApp - (21) 97423-1632</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </section>
-    <!-- Section: Links -->
   </div>
   <!-- Grid container -->
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.05);">
-    © 2023 Aelius Solar
-    <a class="text-reset fw-bold" href="https://aeliussolar.com/">Rod. Rio Teresópolis BR– 116 KM 141 - Duque de Caxias - RJ. CNPJ: 31.857.797/0003-33</a>
+    © 2024 Pedro Henrique Nutri * Criação de Sites por
+    <a class="text-reset fw-bold" href="https://enricosaito.com.br/">Enrico Saito</a>
   </div>
   <!-- Copyright -->
 </footer>
